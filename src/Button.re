@@ -16,9 +16,26 @@ let styleModifierToClass = modifier =>
   | StyleLink => "uk-button-link"
   };
 
+type sizeModifier =
+  | SizeSmall
+  | SizeRegular
+  | SizeLarge;
+
+let sizeModifierToClass = modifier =>
+  switch (modifier) {
+  | SizeSmall => "uk-button-small"
+  | SizeRegular => ""
+  | SizeLarge => "uk-button-large"
+  };
+
 [@react.component]
-let make = (~style=StyleDefault, ~children) => {
-  let className = "uk-button" ++ " " ++ styleModifierToClass(style);
+let make = (~children, ~style=StyleDefault, ~size=SizeRegular) => {
+  let className =
+    "uk-button"
+    ++ " "
+    ++ styleModifierToClass(style)
+    ++ " "
+    ++ sizeModifierToClass(size);
 
   <button className> children </button>;
 };
