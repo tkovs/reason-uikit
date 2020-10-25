@@ -1,0 +1,24 @@
+{
+  "name": "reason-uikit",
+  "version": "0.1.0",
+  "reason": {
+    "react-jsx": 3
+  },
+  "package-specs": [
+    {
+      "module": "commonjs",
+      "in-source": true
+    }
+  ],
+  "suffix": ".bs.js",
+  "sources": [
+    "src"
+  ],
+  "bs-dependencies": [
+    "reason-react"
+  ],
+  "bsc-flags": [
+    "-bs-super-errors"
+  ],
+  "refmt": 3
+}

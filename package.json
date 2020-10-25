@@ -1,0 +1,36 @@
+{
+  "name": "reason-uikit",
+  "version": "0.1.0",
+  "description": "ReasonML implementation of UIKit",
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w -ws _ ",
+    "clean": "bsb -clean-world",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "moduleserve ./ --port 8000"
+  },
+  "keywords": [
+    "BuckleScript",
+    "uikit",
+    "tkovs",
+    "reason",
+    "reasonml"
+  ],
+  "bugs": "https://github.com/tkovs/reason-uikit/issues",
+  "main": "src/Teste.bs.js",
+  "homepage": "https://github.com/tkovs/reason-uikit",
+  "repository": "git@github.com:tkovs/reason-uikit.git",
+  "author": "tkovs <joao.rodrigues@arapiraca.ufal.br>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "reason-react": ">=0.7.1"
+  },
+  "devDependencies": {
+    "moduleserve": "^0.9.0"
+  },
+  "peerDependencies": {
+    "bs-platform": "^4.0.3"
+  }
+}
