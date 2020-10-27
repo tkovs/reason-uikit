@@ -18,18 +18,18 @@ let styleModifierToClass = modifier =>
 
 type sizeModifier =
   | SizeSmall
-  | SizeRegular
+  | SizeMedium
   | SizeLarge;
 
 let sizeModifierToClass = modifier =>
   switch (modifier) {
   | SizeSmall => " uk-button-small"
-  | SizeRegular => ""
+  | SizeMedium => ""
   | SizeLarge => " uk-button-large"
   };
 
 [@react.component]
-let make = (~children, ~style=StyleDefault, ~size=SizeRegular) => {
+let make = (~children, ~style=StyleDefault, ~size=SizeMedium) => {
   let className =
     "uk-button" ++ styleModifierToClass(style) ++ sizeModifierToClass(size);
 
