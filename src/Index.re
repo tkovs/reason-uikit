@@ -1,1 +1,1 @@
-ReactDOMRe.renderToElementWithId(<Button> {React.int(5)} </Button>, "root");
+ReactDOMRe.renderToElementWithId(<App />, "root");
