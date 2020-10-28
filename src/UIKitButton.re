@@ -29,9 +29,15 @@ let sizeModifierToClass = modifier =>
   };
 
 [@react.component]
-let make = (~children, ~style=StyleDefault, ~size=SizeMedium) => {
+let make =
+    (
+      ~children,
+      ~style=StyleDefault,
+      ~size=SizeMedium,
+      ~onClick: ReactEvent.Mouse.t => unit,
+    ) => {
   let className =
     "uk-button" ++ styleModifierToClass(style) ++ sizeModifierToClass(size);
 
-  <button className> children </button>;
+  <button className onClick> children </button>;
 };
