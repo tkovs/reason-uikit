@@ -28,6 +28,21 @@ let sizeModifierToClass = modifier =>
   | SizeLarge => " uk-button-large"
   };
 
+type buttonModifiers =
+  | SizeModifier(sizeModifier)
+  | StyleModifier(styleModifier);
+
+let concatAroundSpaces = (a, b) => a ++ " " ++ b;
+
+let transform = modifier =>
+  switch (modifier) {
+  | SizeModifier(size) => size |> sizeModifierToClass
+  | StyleModifier(style) => style |> styleModifierToClass
+  };
+
+let buttonModifiersMap = modifiers =>
+  List.map(transform, modifiers) |> List.fold_left(concatAroundSpaces, "");
+
 [@react.component]
 let make =
     (
@@ -36,8 +51,9 @@ let make =
       ~size=SizeMedium,
       ~onClick: ReactEvent.Mouse.t => unit,
     ) => {
-  let className =
-    "uk-button" ++ styleModifierToClass(style) ++ sizeModifierToClass(size);
+  let classNames =
+    [StyleModifier(style), SizeModifier(size)] |> buttonModifiersMap;
+  let className = "uk-button" ++ classNames;
 
   <button className onClick> children </button>;
 };
