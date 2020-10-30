@@ -11,9 +11,10 @@
     }
   ],
   "suffix": ".bs.js",
-  "sources": [
-    "src"
-  ],
+  "sources": [{
+    "dir": "src",
+    "subdirs": true
+  }],
   "bs-dependencies": [
     "reason-react"
   ],
