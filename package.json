@@ -1,6 +1,6 @@
 {
   "name": "reason-uikit",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "ReasonML implementation of UIKit",
   "scripts": {
     "build": "bsb -make-world",
