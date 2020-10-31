@@ -287,8 +287,10 @@ let iconModifierToProperty = icon =>
   };
 
 [@react.component]
-let make = (~icon) => {
-  let icon = {"uk-icon": "icon: " ++ iconModifierToProperty(icon)};
+let make = (~icon, ~ratio=1) => {
+  let iconProperty = "icon: " ++ iconModifierToProperty(icon) ++ ";";
+  let ratioProperty = "ratio: " ++ string_of_int(ratio) ++ ";";
+  let properties = iconProperty ++ ratioProperty;
 
-  <Spread props=icon> <span /> </Spread>;
+  <Spread props={"uk-icon": properties}> <span /> </Spread>;
 };
