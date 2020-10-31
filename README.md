@@ -32,15 +32,23 @@
   <a href="#memo-license">License</a>
 </p>
 
-## Status
-Not all of the [UIKit][uikit] components were implemented. Here is a list of the currently implemented components:
+## Status of migration
 
-* [x] Button
-* [x] Icon
-* [ ] Container
-* [ ] Input
-* [ ] Label
-* [ ] Link
+Not all of the [UIKit][uikit] components were implemented.
+
+### Finished
+
+### Partially
+
+- Icon
+-  Button
+- Container
+
+### To begin
+
+* Input
+* Label
+* Link
 * ...
 
 ## How do I install?
@@ -65,7 +73,7 @@ open ReasonUIKit;
 
 [@react.component]
 let make = () =>
-  <Container>
+  <Container size=Container.SizeSmall>
     <Button onClick={_ => ()} style=Button.StylePrimary size=Button.SizeLarge>
       <Icon icon=Icon.Play ratio=2 />
     </Button>
