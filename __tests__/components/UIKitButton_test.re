@@ -3,7 +3,7 @@ open Expect;
 open ReactTestingLibrary;
 open ReasonUIKit;
 
-describe("Component", () => {
+describe("Button component render", () => {
   test("pure", () => {
     <Button onClick={_ => ()}> {React.string("Back")} </Button>
     |> render

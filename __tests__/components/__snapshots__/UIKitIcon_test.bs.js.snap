@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon component render pure 1`] = `
+<div>
+  <span
+    uk-icon="icon: camera;ratio: 1;"
+  />
+</div>
+`;
+
+exports[`Icon component render with ratio 1`] = `
+<div>
+  <span
+    uk-icon="icon: home;ratio: 2;"
+  />
+</div>
+`;

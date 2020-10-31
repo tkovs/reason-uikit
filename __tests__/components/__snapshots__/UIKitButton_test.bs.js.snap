@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Component pure 1`] = `
+exports[`Button component render pure 1`] = `
 <div>
   <button
     class="uk-button uk-button-default "
@@ -10,7 +10,7 @@ exports[`Component pure 1`] = `
 </div>
 `;
 
-exports[`Component with size 1`] = `
+exports[`Button component render with size 1`] = `
 <div>
   <button
     class="uk-button uk-button-default uk-button-large"
@@ -20,7 +20,7 @@ exports[`Component with size 1`] = `
 </div>
 `;
 
-exports[`Component with style 1`] = `
+exports[`Button component render with style 1`] = `
 <div>
   <button
     class="uk-button uk-button-primary "
