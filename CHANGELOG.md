@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Added
 - ReasonUIKit module that exports the components as modules
+- `disabled` property to Button component
+- Icon component
 
 ## [0.3.0] - 2020-10-27
 ### Added
