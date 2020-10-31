@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spread component render should spread id prop in his children 1`] = `
+<div>
+  <div
+    id="root"
+  />
+</div>
+`;
+
+exports[`Spread component render should spread props in his children 1`] = `
+<div>
+  <div
+    data-testid="submit-button"
+    uk-button=""
+  />
+</div>
+`;
