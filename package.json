@@ -6,7 +6,7 @@
     "build": "bsb -make-world",
     "start": "bsb -make-world -w -ws _ ",
     "clean": "bsb -clean-world",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --watchAll",
     "server": "moduleserve ./ --port 8000"
   },
   "keywords": [
@@ -27,6 +27,8 @@
     "reason-react": ">=0.7.1"
   },
   "devDependencies": {
+    "@glennsl/bs-jest": "^0.6.0",
+    "bs-react-testing-library": "^0.8.0",
     "moduleserve": "^0.9.0"
   },
   "peerDependencies": {

@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component pure 1`] = `
+<div>
+  <button
+    class="uk-button uk-button-default "
+  >
+    Back
+  </button>
+</div>
+`;
+
+exports[`Component with size 1`] = `
+<div>
+  <button
+    class="uk-button uk-button-default uk-button-large"
+  >
+    Back
+  </button>
+</div>
+`;
+
+exports[`Component with style 1`] = `
+<div>
+  <button
+    class="uk-button uk-button-primary "
+  >
+    Back
+  </button>
+</div>
+`;
