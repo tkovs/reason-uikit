@@ -47,13 +47,14 @@ let buttonModifiersMap = modifiers =>
 let make =
     (
       ~children,
-      ~style=StyleDefault,
+      ~disabled=false,
       ~size=SizeMedium,
+      ~style=StyleDefault,
       ~onClick: ReactEvent.Mouse.t => unit,
     ) => {
   let classNames =
     [StyleModifier(style), SizeModifier(size)] |> buttonModifiersMap;
-  let className = "uk-button" ++ classNames;
+  let className = "uk-button uk-width-1-2" ++ classNames;
 
-  <button className onClick> children </button>;
+  <button className onClick disabled> children </button>;
 };
