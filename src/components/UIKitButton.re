@@ -54,7 +54,7 @@ let make =
     ) => {
   let classNames =
     [StyleModifier(style), SizeModifier(size)] |> buttonModifiersMap;
-  let className = "uk-button uk-width-1-2" ++ classNames;
+  let className = "uk-button" ++ classNames;
 
   <button className onClick disabled> children </button>;
 };
