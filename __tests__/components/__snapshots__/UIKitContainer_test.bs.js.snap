@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container component render pure 1`] = `
+<div>
+  <div
+    class="uk-container"
+  >
+    tkovs
+  </div>
+</div>
+`;
+
+exports[`Container component render with size 1`] = `
+<div>
+  <div
+    class="uk-container uk-container-large"
+  >
+    tkovs
+  </div>
+</div>
+`;
