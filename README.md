@@ -4,7 +4,7 @@
 </h1>
 
 <h4 align="center">
-  A ReasonML React implementation of the [UIKit][uikit]
+  A ReasonML React implementation of the <a link="https://getuikit.com/">UIKit</a>
 </h4>
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/tkovs/reason-uikit.svg">
