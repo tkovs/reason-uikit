@@ -50,11 +50,16 @@ let make =
       ~disabled=false,
       ~size=SizeMedium,
       ~style=StyleDefault,
+      ~testId="",
       ~onClick: ReactEvent.Mouse.t => unit,
     ) => {
   let classNames =
     [StyleModifier(style), SizeModifier(size)] |> buttonModifiersMap;
   let className = "uk-button" ++ classNames;
 
-  <button className onClick disabled> children </button>;
+  let spreadProps = {"data-testid": testId};
+
+  <Spread props=spreadProps>
+    <button className onClick disabled> children </button>
+  </Spread>;
 };

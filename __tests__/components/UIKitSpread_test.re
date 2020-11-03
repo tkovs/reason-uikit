@@ -1,7 +1,6 @@
 open Jest;
 open Expect;
 open ReactTestingLibrary;
-open ReasonUIKit;
 
 describe("Spread component render", () => {
   test("should spread id prop in his children", () => {
