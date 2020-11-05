@@ -1,3 +1,5 @@
+include UIKitUtilityProperties;
+
 type styleModifier =
   | StyleDefault
   | StylePrimary
@@ -30,7 +32,9 @@ let sizeModifierToClass = modifier =>
 
 type buttonModifiers =
   | SizeModifier(sizeModifier)
-  | StyleModifier(styleModifier);
+  | StyleModifier(styleModifier)
+  | WidthModifier(option(widthModifier))
+  | PaddingModifier(option(paddingModifier));
 
 let concatAroundSpaces = (a, b) => a ++ " " ++ b;
 
@@ -38,6 +42,8 @@ let transform = modifier =>
   switch (modifier) {
   | SizeModifier(size) => size |> sizeModifierToClass
   | StyleModifier(style) => style |> styleModifierToClass
+  | WidthModifier(width) => width |> widthModifierToClass
+  | PaddingModifier(padding) => padding |> paddingModifierToClass
   };
 
 let buttonModifiersMap = modifiers =>
@@ -50,11 +56,19 @@ let make =
       ~disabled=false,
       ~size=SizeMedium,
       ~style=StyleDefault,
+      ~width=None,
+      ~padding=None,
       ~testId="",
       ~onClick: ReactEvent.Mouse.t => unit,
     ) => {
   let classNames =
-    [StyleModifier(style), SizeModifier(size)] |> buttonModifiersMap;
+    [
+      StyleModifier(style),
+      SizeModifier(size),
+      WidthModifier(width),
+      PaddingModifier(padding),
+    ]
+    |> buttonModifiersMap;
   let className = "uk-button" ++ classNames;
 
   let spreadProps = {"data-testid": testId};

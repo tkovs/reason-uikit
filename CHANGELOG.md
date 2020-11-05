@@ -7,7 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- `data-testid` prop to Button component
+- `data-testid`, `width` and `padding` props to Button component
+- ButtonGroup component
+- Generic component with padding and width props
 
 ## [0.4.1] - 2020-10-31
 ### Fixed

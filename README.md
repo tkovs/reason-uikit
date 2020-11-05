@@ -41,8 +41,10 @@ Not all of the [UIKit][uikit] components were implemented.
 ### Partially
 
 - Icon
--  Button
+- Button
 - Container
+- Width
+- Padding
 
 ### To begin
 
