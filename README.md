@@ -45,6 +45,8 @@ Not all of the [UIKit][uikit] components were implemented.
 - Container
 - Width
 - Padding
+- Spinner
+- Badge
 
 ### To begin
 
