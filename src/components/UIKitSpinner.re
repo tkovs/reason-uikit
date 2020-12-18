@@ -1,2 +1,2 @@
 [@react.component]
-let make = () => <Spread props={{ "uk-spinner": None }}><div /></Spread>
+let make = () => <Spread props={{ "uk-spinner": "" }}><div /></Spread>

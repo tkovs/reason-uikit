@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UIKitSpinner should render correctly 1`] = `
+<div>
+  <div
+    uk-spinner=""
+  />
+</div>
+`;
