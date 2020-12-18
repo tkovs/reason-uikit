@@ -1,3 +1,4 @@
+module Badge = UIKitBadge;
 module Button = UIKitButton;
 module ButtonGroup = UIKitButtonGroup;
 module Container = UIKitContainer;
